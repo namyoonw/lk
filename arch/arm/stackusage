@@ -3,11 +3,11 @@
 import sys
 import re
 
-hexrule = re.compile(r"([0-9a-fA-F]+)")
-hex2byterule = re.compile(r"([0-9a-fA-F]{4})")
-hexcolonrule = re.compile(r"([0-9a-fA-F]+):")
-symbolrule = re.compile(r"<([._a-zA-Z]+[._0-9a-zA-Z]*)>:")
-insrule = re.compile(r"([a-zA-Z][.a-zA-Z]*)")
+hexrule = re.compile("([0-9a-fA-F]+)")
+hex2byterule = re.compile("([0-9a-fA-F]{4})")
+hexcolonrule = re.compile("([0-9a-fA-F]+):")
+symbolrule = re.compile("<([._a-zA-Z]+[._0-9a-zA-Z]*)>:")
+insrule = re.compile("([a-zA-Z][.a-zA-Z]*)")
 
 currsymbol = ""
 curraddress = 0
